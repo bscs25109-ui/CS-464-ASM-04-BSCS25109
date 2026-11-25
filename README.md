@@ -1,6 +1,6 @@
 # CS464 Assignment 04 · Muhammad Abu Bakar · BSCS25109
 
-**Video (90–180 s):** [PASTE YOUR YOUTUBE (UNLISTED) OR GOOGLE DRIVE LINK HERE]
+**Video :** https://drive.google.com/file/d/1JBzpAhYWqTwYMkdfERqWE1-XZMXaqys5/view?usp=sharing
 
 <p>
 <img src="Docs/hud-16x9.png" width="320" alt="The HUD at 16:9">
