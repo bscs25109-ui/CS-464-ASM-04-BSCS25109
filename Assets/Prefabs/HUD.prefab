@@ -363,7 +363,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Hud
   scorePanel: {fileID: 3502490254224714562}
   scoreText: {fileID: 9094939168941268098}
-  timerText: {fileID: 9094939168941268098}
+  timerText: {fileID: 7339602994261867955}
   livesText: {fileID: 1829327025708329146}
   winPanel: {fileID: 6953387245411863901}
   losePanel: {fileID: 5206630318957217553}
