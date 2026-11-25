@@ -6,7 +6,8 @@ public class PowerUp : MonoBehaviour
 {
     [SerializeField] PowerUpType type = PowerUpType.Speed;
     [SerializeField] float multiplier = 1.6f;   // Speed only: how much faster
-    [SerializeField] float duration = 5f;     // Speed only: how many seconds
+    [SerializeField] float duration = 5f;       // Speed only: how many seconds
+
     void OnTriggerEnter(Collider other)
     {
         // Only react to the Player
@@ -17,6 +18,8 @@ public class PowerUp : MonoBehaviour
         else
             other.GetComponent<Health>().shielded = true;
 
+        SfxPlayer.PlayPickup();
+        Fx.Pickup(transform.position);
         Destroy(gameObject);   // consume the pickup
     }
 }

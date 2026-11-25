@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -14,6 +14,9 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        // Update still runs at a time scale of 0, so guard the input while paused
+        if (PauseMenu.IsPaused) { input = Vector3.zero; return; }
+
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");
         input = Vector3.ClampMagnitude(new Vector3(h, 0f, v), 1f);
